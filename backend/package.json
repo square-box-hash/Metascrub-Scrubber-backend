@@ -1,9 +1,10 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MetaScrub Scrubber Backend",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,8 +16,5 @@
     "exiftool-vendored": "^30.5.0",
     "express": "^5.1.0",
     "multer": "^2.0.2"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14"
   }
 }
