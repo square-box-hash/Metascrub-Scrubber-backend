@@ -10,7 +10,11 @@ const { exiftool } = require('exiftool-vendored');
 const app = express();
 
 // Configure multer for file upload
-const upload = multer({ dest: 'uploads/' });
+// This allows files up to 50MB
+const upload = multer({ 
+  dest: 'uploads/',
+  limits: { fileSize: 50 * 1024 * 1024 } 
+});
 
 // Enable CORS
 app.use(cors());
